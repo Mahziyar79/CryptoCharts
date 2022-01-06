@@ -15,6 +15,9 @@
   display: none;
 }
 @media screen and (max-width: 992px) {
+  .chart-mobile iframe {
+    padding: 20px;
+  }
   .market_overview{
     flex-direction: column;
   }

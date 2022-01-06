@@ -1,6 +1,6 @@
 import { MarketOverview } from "react-ts-tradingview-widgets";
 
-const MarketOverviewComp = ({width}) => {
+const MarketOverviewComp = () => {
     const tabs = [
         {
           title: "Futures",
@@ -22,12 +22,12 @@ const MarketOverviewComp = ({width}) => {
         <MarketOverview
             colorTheme="dark"
             height={400}
+            width={350}
             tabs={tabs}
             showChart="true"
             locale="en"
             largeChartUrl=""
             showFloatingTooltip="false"
-            width={width}
             dateRange="1D"
             plotLineColorGrowing="rgba(41, 98, 255, 1)"
             plotLineColorFalling="rgba(41, 98, 255, 1)"

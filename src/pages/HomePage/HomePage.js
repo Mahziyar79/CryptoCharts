@@ -68,6 +68,7 @@ const HomePage = () => {
               save_image="false"
               theme="dark"
               width="330px"
+              height="450px"
             />
           </div>
         </div>
@@ -119,14 +120,15 @@ const HomePage = () => {
         </div>
       </section>
       <section className="market_overview">
-        <div className="chart-desktop">
-          <MarketOverviewComp />
-        </div>
-        <div className="chart-mobile">
+        <div className="MiniChart">
           <MarketOverviewComp />
         </div>
         <div className="MiniChart">
-          <MiniChart colorTheme="dark" height='400' symbol= "BINANCE:BTCUSDT"></MiniChart>
+          <MiniChart
+            colorTheme="dark"
+            height="400"
+            symbol="BINANCE:BTCUSDT"
+          ></MiniChart>
         </div>
       </section>
       <section className="tickertape">
@@ -137,6 +139,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-
-
