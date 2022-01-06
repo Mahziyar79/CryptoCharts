@@ -15,7 +15,7 @@
   .footer__item {
     margin-bottom: 2.5rem;
     text-align: center;
-    width: 22%;
+    width: 100%;
   }
   .footer__item a {
     text-decoration: none;
@@ -61,6 +61,7 @@
     .footer__item {
       margin-bottom: 0;
       margin-left: 2rem;
+      width: 22%;
     }
   }
   .footer-img p{
