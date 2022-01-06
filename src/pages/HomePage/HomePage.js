@@ -3,24 +3,30 @@ import serviceimg1 from "../../assets/images/services-img1.png";
 import serviceimg2 from "../../assets/images/services-img2.png";
 import serviceimg3 from "../../assets/images/services-img3.png";
 import TradingViewWidget from "react-tradingview-widget";
-import { MarketOverview, TickerTape } from "react-ts-tradingview-widgets";
+import { TickerTape, MiniChart } from "react-ts-tradingview-widgets";
+import MarketOverviewComp from "../../components/MarketOverviewComp";
 
 const HomePage = () => {
-  const tabs = [
+  const symbols = [
     {
-      title: "Futures",
-      symbols: [
-        {
-          s: "BINANCE:ETHUSDT",
-        },
-        {
-          s: "BINANCE:BTCUSDT",
-        },
-        {
-          s: "BINANCE:SHIBUSDT",
-        },
-      ],
-      originalTitle: "Futures",
+      proName: "FX_IDC:EURUSD",
+      title: "EUR/USD",
+    },
+    {
+      proName: "BITSTAMP:BTCUSD",
+      title: "Bitcoin",
+    },
+    {
+      proName: "BITSTAMP:ETHUSD",
+      title: "Ethereum",
+    },
+    {
+      description: "",
+      proName: "BINANCE:ETHUSDT",
+    },
+    {
+      description: "shibusdt",
+      proName: "BINANCE:SHIBUSDT",
     },
   ];
   return (
@@ -37,13 +43,13 @@ const HomePage = () => {
         </div>
         <div className="banner-btns">
           <button className="btn-banner-1 btn-lg animate__animated animate__fadeInBottomRight">
-            Get Official WhatsApp API{" "}
+            Get Official WhatsApp API
           </button>
           <button className="btn-banner-2 btn-lg animate__animated animate__fadeIn">
-            Join a Free Demo{" "}
+            Join a Free Demo
           </button>
           <button className="btn-banner-3 btn-lg animate__animated animate__fadeInBottomLeft">
-            Start Free Trial{" "}
+            Start Free Trial
           </button>
         </div>
         <div className="banner-img">
@@ -114,55 +120,23 @@ const HomePage = () => {
       </section>
       <section className="market_overview">
         <div className="chart-desktop">
-          <MarketOverview
-            colorTheme="dark"
-            height={700}
-            tabs={tabs}
-            showChart="true"
-            locale="en"
-            largeChartUrl=""
-            showFloatingTooltip="false"
-            width="600"
-            dateRange="1D"
-            plotLineColorGrowing="rgba(41, 98, 255, 1)"
-            plotLineColorFalling="rgba(41, 98, 255, 1)"
-            gridLineColor="rgba(240, 243, 250, 0)"
-            scaleFontColor="rgba(120, 123, 134, 1)"
-            belowLineFillColorGrowing="rgba(41, 98, 255, 0.12)"
-            belowLineFillColorFalling="rgba(41, 98, 255, 0.12)"
-            belowLineFillColorGrowingBottom="rgba(41, 98, 255, 0)"
-            belowLineFillColorFallingBottom="rgba(41, 98, 255, 0)"
-            symbolActiveColor="rgba(41, 98, 255, 0.12)"
-          ></MarketOverview>
+          <MarketOverviewComp />
         </div>
         <div className="chart-mobile">
-          <MarketOverview
-            colorTheme="dark"
-            height={700}
-            tabs={tabs}
-            showChart="true"
-            locale="en"
-            largeChartUrl=""
-            showFloatingTooltip="false"
-            width="300"
-            dateRange="1D"
-            plotLineColorGrowing="rgba(41, 98, 255, 1)"
-            plotLineColorFalling="rgba(41, 98, 255, 1)"
-            gridLineColor="rgba(240, 243, 250, 0)"
-            scaleFontColor="rgba(120, 123, 134, 1)"
-            belowLineFillColorGrowing="rgba(41, 98, 255, 0.12)"
-            belowLineFillColorFalling="rgba(41, 98, 255, 0.12)"
-            belowLineFillColorGrowingBottom="rgba(41, 98, 255, 0)"
-            belowLineFillColorFallingBottom="rgba(41, 98, 255, 0)"
-            symbolActiveColor="rgba(41, 98, 255, 0.12)"
-          ></MarketOverview>
+          <MarketOverviewComp />
+        </div>
+        <div className="MiniChart">
+          <MiniChart colorTheme="dark" height='400' symbol= "BINANCE:BTCUSDT"></MiniChart>
         </div>
       </section>
       <section className="tickertape">
-        <TickerTape colorTheme="dark"></TickerTape>
+        <TickerTape colorTheme="dark" symbols={symbols}></TickerTape>
       </section>
     </>
   );
 };
 
 export default HomePage;
+
+
+
