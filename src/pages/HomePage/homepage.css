@@ -1,0 +1,169 @@
+.top-banner-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.banner-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-mobile{
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .chart-desktop{
+    display: none !important;
+  }
+  .chart-mobile{
+    display: block;
+  }
+  #tradingview_49beb-wrapper {
+    width: unset !important;
+  }
+  #tradingview_b8e32-wrapper > div {
+    width: 100px !important;
+  }
+  .top-banner-home {
+    padding-top: 30px;
+  }
+  .banner-title h1 {
+    font-size: 3rem !important;
+  }
+  .banner-btns {
+    flex-direction: column;
+  }
+  .banner-btns button {
+    margin-top: 10px !important;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .service {
+    margin-bottom: 30px !important;
+  }
+  .service img {
+    max-width: 80% !important;
+  }
+  .service-sec-title {
+    font-size: 2rem !important;
+  }
+  .service-sec-title {
+    margin-bottom: 35px !important;
+  }
+}
+.banner-btns button {
+  margin: 0 10px;
+}
+.banner-title h1 {
+  color: var(--color-headings);
+  font-size: 6rem;
+}
+.banner-desc {
+  font-size: 20px;
+  color: #0f0909;
+  line-height: 2em;
+  margin-top: 10px !important;
+}
+.banner-title h1,
+.banner-desc {
+  text-align: center;
+  margin: 20px 0;
+}
+.btn-banner-1 {
+  border: 1px solid #d9bde8;
+  background-color: #e8e1fc;
+  color: #5e2ced;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-banner-1:hover {
+  background-color: #5e2ced;
+  color: #e8e1fc;
+}
+.btn-banner-2 {
+  border: 1px solid #aaeda866;
+  background-color: #d4f6ee;
+  color: #00c99c;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-banner-2:hover {
+  background-color: #00c99c;
+  color: #e8e1fc;
+}
+.btn-banner-3 {
+  border: 1px solid #d9bde8;
+  background-color: #e8e1fc;
+  color: #5e2ced;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-banner-3:hover {
+  background-color: #5e2ced;
+  color: #e8e1fc;
+}
+.banner-img {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.service-sec-title {
+  text-align: center;
+  margin: 60px 0;
+  margin-top: 120px !important;
+  font-size: 2.2em;
+}
+.service img {
+  max-width: 95%;
+}
+.service-title,
+.service-desc {
+  text-align: center;
+  margin: 10px 15px;
+}
+.service {
+  margin: 0 15px;
+}
+.btn.btn-service {
+  margin-top: 20px;
+  background-color: #23a455;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 15px;
+  padding: 13px 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.service-block-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-title {
+  font-size: 2rem;
+}
+.service-desc {
+  color: #23a455;
+}
+.market_overview {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tickertape{
+  margin-top: 120px;
+}
