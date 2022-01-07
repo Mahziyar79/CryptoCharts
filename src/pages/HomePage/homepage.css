@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .banner-btns {
@@ -36,9 +36,7 @@
   #tradingview_b8e32-wrapper > div {
     width: 100px !important;
   }
-  .top-banner-home {
-    padding-top: 30px;
-  }
+
   .banner-title h1 {
     font-size: 3rem !important;
   }
@@ -175,4 +173,10 @@
 }
 .tickertape{
   margin-top: 120px;
+}
+.MiniChart_comp2{
+  flex: 2;
+}
+.MiniChart_comp1{
+  flex: 1;
 }

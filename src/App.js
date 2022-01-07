@@ -6,9 +6,9 @@ import HomePage from "./pages/HomePage/HomePage";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <HomePage />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
